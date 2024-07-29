@@ -7,9 +7,9 @@ from ultralytics import YOLO
 import numpy as np
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'C:/Users/Luke.Czachor/V1VideoRayLC/D80Final723GOOD/uploads'
+app.config['UPLOAD_FOLDER'] = 'uploads'
 
-model = YOLO('C:\\d10weights\\best.pt')
+model = YOLO('best.pt')
 
 # Designate Class names to a color (RGB decimal value)
 class_colors = {
